@@ -1,0 +1,34 @@
+.judging {
+  border-bottom: 1px solid var(--white-fade);
+  padding: 4rem 0;
+}
+
+.judging > div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.judging h2 {
+  margin-bottom: 32px;
+  font-size: 32px;
+}
+
+.judging span {
+  color: var(--pink);
+}
+
+.judging ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.judging ul li {
+  margin-bottom: 1rem;
+}
+
+.judging .register_btn {
+  margin-top: 3rem;
+}

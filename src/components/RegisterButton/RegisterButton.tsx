@@ -1,7 +1,9 @@
 import "./RegisterButton.css";
 
-const RegisterButton = () => {
-  return <button className="register_btn">Register</button>;
+type Props = { text?: string };
+
+const RegisterButton = ({ text }: Props) => {
+  return <button className="register_btn">{text || "Register"}</button>;
 };
 
 export default RegisterButton;

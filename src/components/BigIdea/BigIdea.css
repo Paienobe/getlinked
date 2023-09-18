@@ -1,0 +1,28 @@
+.big_idea {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--white-fade);
+}
+
+.big_idea > div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.big_idea > div h2 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 32px;
+}
+
+.big_idea > div h2 > span {
+  color: var(--pink);
+}
+
+.idea_text {
+  width: 44.5%;
+  font-size: 14px;
+  line-height: 27.5px;
+}

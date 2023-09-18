@@ -1,0 +1,25 @@
+.rules {
+  border-bottom: 1px solid var(--white-fade);
+}
+
+.rules > div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rules_text span {
+  color: var(--pink);
+}
+
+.rules_text h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.rules_text p {
+  font-size: 14px;
+  line-height: 27.5px;
+}
