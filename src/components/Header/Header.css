@@ -1,0 +1,35 @@
+header {
+  border-bottom: 1px solid var(--white-fade);
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.link_holder {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.logo {
+  font-family: ClashDisplay-Bold;
+  font-size: 36px;
+  line-height: 44.28px;
+}
+
+.logo span {
+  color: var(--pink);
+}

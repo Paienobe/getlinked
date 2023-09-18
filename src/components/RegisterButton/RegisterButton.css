@@ -1,0 +1,12 @@
+.register_btn {
+  height: 53px;
+  width: 172px;
+  display: block;
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-family: var(--primary-font);
+  border-radius: 4px;
+  background: var(--gradient);
+  cursor: pointer;
+}
