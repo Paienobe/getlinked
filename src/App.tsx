@@ -4,6 +4,7 @@ import Faq from "./components/FAQ/Faq";
 import Header from "./components/Header/Header";
 import Intro from "./components/Intro/Intro";
 import Judging from "./components/Judging/Judging";
+import Prizes from "./components/Prizes/Prizes";
 import Rules from "./components/Rules/Rules";
 import Timeline from "./components/Timeline/Timeline";
 
@@ -17,6 +18,7 @@ function App() {
       <Judging />
       <Faq />
       <Timeline />
+      <Prizes />
     </>
   );
 }
