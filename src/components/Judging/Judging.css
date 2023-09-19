@@ -27,6 +27,8 @@
 
 .judging ul li {
   margin-bottom: 1rem;
+  font-size: 14px;
+  line-height: 27.5px;
 }
 
 .judging .register_btn {

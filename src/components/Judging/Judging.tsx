@@ -35,7 +35,7 @@ const Judging = () => {
   const criteriaList = judgementCriteria.map((item) => {
     return (
       <li key={item.title}>
-        <span>{item.title}</span>
+        <span>{item.title} </span>
         {item.description}
       </li>
     );
