@@ -1,0 +1,21 @@
+.partners {
+  border-bottom: 1px solid var(--white-fade);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.partners p {
+  font-size: 14px;
+  line-height: 27.5px;
+  margin-top: 32px;
+}
+
+.partners > div {
+  width: 80%;
+  margin: auto;
+}
+
+.partners > div img {
+  width: 100%;
+  margin-top: 5rem;
+}
