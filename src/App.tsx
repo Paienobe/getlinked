@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Intro from "./components/Intro/Intro";
 import Judging from "./components/Judging/Judging";
 import Rules from "./components/Rules/Rules";
+import Timeline from "./components/Timeline/Timeline";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Rules />
       <Judging />
       <Faq />
+      <Timeline />
     </>
   );
 }
