@@ -44,7 +44,7 @@ const Judging = () => {
     <section className="judging">
       <div>
         <img src={judging} alt="" />
-        <div>
+        <div className="judging_text">
           <h2>
             Judging Criteria <br />
             <span>Key attributes</span>

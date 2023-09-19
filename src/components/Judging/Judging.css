@@ -4,7 +4,7 @@
 }
 
 .judging > div {
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -31,4 +31,12 @@
 
 .judging .register_btn {
   margin-top: 3rem;
+}
+
+.judging_text {
+  width: 45%;
+}
+
+.judging img {
+  width: 50%;
 }
