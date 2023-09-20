@@ -1,0 +1,61 @@
+footer {
+  padding: 5rem 0;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 27.5px;
+}
+
+footer > div {
+  width: 80%;
+  margin: auto;
+}
+
+.footer_top {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.footer_top > div:first-of-type {
+  width: 45%;
+}
+
+.footer_top > div:not(:first-of-type) > p {
+  margin-bottom: 1rem;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socials > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact_p {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact_p p {
+  margin: 0;
+}
+
+.first_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.last_text {
+  text-align: center;
+  margin-top: 3rem;
+}
