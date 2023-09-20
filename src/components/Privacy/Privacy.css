@@ -1,0 +1,80 @@
+.privacy {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--white-fade);
+}
+
+.privacy > div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.privacy_text {
+  width: 45%;
+}
+
+.privacy_text > p {
+  font-size: 14px;
+  line-height: 27.5px;
+}
+
+.privacy_text > p:last-of-type {
+  margin: 2rem 0;
+}
+
+.privacy_card {
+  padding: 3rem;
+  font-size: 14px;
+  line-height: 216%;
+  border: 1px solid var(--pink);
+  border-radius: 5px;
+}
+
+.privacy_card > p {
+  margin-bottom: 2rem;
+}
+
+.privacy_card ul > p:first-of-type {
+  color: var(--pink);
+}
+.privacy_card ul > p {
+  font-weight: bold;
+}
+
+.privacy_card ul > p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.privacy_card ul {
+  list-style-type: none;
+}
+.privacy_card ul li {
+  list-style-image: url("../../assets/bullet.svg");
+  margin-left: 20px;
+  padding-left: 10px;
+  margin-bottom: 1rem;
+}
+
+.privacy_card button {
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.privacy_image_parent {
+  width: 45%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.privacy_image_parent img {
+  width: 90%;
+}
+
+.privacy_image_parent img:last-of-type {
+  width: 80%;
+  position: absolute;
+  top: 200px;
+}
