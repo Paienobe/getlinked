@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import RegisterButton from "../RegisterButton/RegisterButton";
 import "./Header.css";
 
@@ -18,8 +19,9 @@ const Header = () => {
             <li>FAQS</li>
             <li>Contact</li>
           </ul>
-
-          <RegisterButton />
+          <Link to="/register">
+            <RegisterButton />
+          </Link>
         </section>
       </nav>
     </header>

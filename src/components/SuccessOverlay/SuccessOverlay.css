@@ -1,0 +1,14 @@
+.success_ovelay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  background-color: #150e28d8;
+}
+
+.success_ovelay img {
+  width: 40%;
+}
