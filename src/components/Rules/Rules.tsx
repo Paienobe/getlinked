@@ -2,11 +2,28 @@ import "./Rules.css";
 import rulesImage from "../../assets/rules.png";
 import Star from "../Star/Star";
 import PinkBlur from "../PinkBlur/PinkBlur";
+import { useEffect, useRef } from "react";
+import { useAnimation, useInView, motion } from "framer-motion";
 
 const Rules = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start({ x: 0 });
+    }
+  }, [isInView]);
   return (
     <section className="rules">
-      <div>
+      <motion.div
+        ref={ref}
+        initial={{ x: 250 }}
+        animate={mainControls}
+        transition={{ duration: 1 }}
+      >
         <div className="rules_text">
           <h2>
             Rules and <br />
@@ -23,7 +40,7 @@ const Rules = () => {
         </div>
 
         <img src={rulesImage} alt="" />
-      </div>
+      </motion.div>
 
       <Star inset="20rem 4rem 0 12rem" />
       <Star isPink={true} inset="10rem 0 0 25rem" />

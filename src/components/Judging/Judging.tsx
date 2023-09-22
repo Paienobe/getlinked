@@ -2,8 +2,21 @@ import "./Judging.css";
 import judging from "../../assets/judging.png";
 import RegisterButton from "../RegisterButton/RegisterButton";
 import PinkBlur from "../PinkBlur/PinkBlur";
+import { useEffect, useRef } from "react";
+import { useAnimation, useInView, motion } from "framer-motion";
 
 const Judging = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start({ x: 0 });
+    }
+  }, [isInView]);
+
   const judgementCriteria = [
     {
       title: "Innovation and Creativity:",
@@ -43,7 +56,12 @@ const Judging = () => {
   });
   return (
     <section className="judging">
-      <div>
+      <motion.div
+        ref={ref}
+        initial={{ x: -250 }}
+        animate={mainControls}
+        transition={{ duration: 1 }}
+      >
         <img src={judging} alt="" />
         <div className="judging_text">
           <h2>
@@ -55,7 +73,7 @@ const Judging = () => {
 
           <RegisterButton text="Read More" />
         </div>
-      </div>
+      </motion.div>
 
       <PinkBlur inset="20rem 0 0 -25rem " />
       <PinkBlur inset="1rem 0 0 55rem" />

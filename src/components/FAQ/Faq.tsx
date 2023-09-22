@@ -1,5 +1,7 @@
 import "./Faq.css";
 import faqImage from "../../assets/cwok_casual_21 1.png";
+import { useEffect, useRef } from "react";
+import { useAnimation, useInView, motion } from "framer-motion";
 
 const Faq = () => {
   const questions = [
@@ -10,10 +12,26 @@ const Faq = () => {
     "What happens after the hackathon ends",
     "Can I work on a project I started before the hackathon?",
   ];
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start({ x: 0 });
+    }
+  }, [isInView]);
   return (
     <div className="faq">
       <div>
-        <div className="questions_container">
+        <motion.div
+          ref={ref}
+          initial={{ x: -250 }}
+          animate={mainControls}
+          transition={{ duration: 1 }}
+          className="questions_container"
+        >
           <h2>
             Frequently Ask <br />
             <span>Question</span>
@@ -32,9 +50,16 @@ const Faq = () => {
               );
             })}
           </div>
-        </div>
+        </motion.div>
 
-        <img src={faqImage} alt="" />
+        <motion.img
+          ref={ref}
+          initial={{ x: 250 }}
+          animate={mainControls}
+          transition={{ duration: 1 }}
+          src={faqImage}
+          alt=""
+        />
       </div>
     </div>
   );

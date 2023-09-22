@@ -1,8 +1,20 @@
 import Star from "../Star/Star";
 import "./Timeline.css";
 import { timeline } from "./timelineData";
+import { useEffect, useRef } from "react";
+import { useAnimation, useInView, motion } from "framer-motion";
 
 const Timeline = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start({ x: 0 });
+    }
+  }, [isInView]);
   return (
     <div className="timeline">
       <div>
@@ -14,7 +26,13 @@ const Timeline = () => {
           </p>
         </div>
 
-        <div className="timeline_holder">
+        <motion.div
+          className="timeline_holder"
+          ref={ref}
+          initial={{ x: 250 }}
+          animate={mainControls}
+          transition={{ duration: 1 }}
+        >
           {timeline.map((item, index) => {
             return (
               <div className="single_timeline" key={item.title}>
@@ -34,7 +52,7 @@ const Timeline = () => {
               </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
 
       <Star inset="40rem 4rem 0 12rem" />

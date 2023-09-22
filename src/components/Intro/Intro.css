@@ -16,6 +16,13 @@
   width: 80%;
   margin: auto;
   margin-bottom: 5rem;
+
+  overflow-x: hidden;
+  overflow-y: visible;
+  height: 4rem;
+  white-space: nowrap;
+  animation: typing 4s steps(40), blink-caret 1s step-end;
+  /* border-right: 0.15em solid orange; */
 }
 
 .ignite img {
@@ -118,4 +125,28 @@
 
 .intro_image_holder img:nth-of-type(4) {
   width: 50%;
+}
+
+/* Keyframes for typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Keyframes for blinking caret */
+@keyframes blink-caret {
+  0% {
+    border-right: 0.15em solid orange;
+  }
+  50% {
+    border-right: 0.15em solid orange;
+    border-color: orange;
+  }
+  100% {
+    border-color: transparent;
+  }
 }

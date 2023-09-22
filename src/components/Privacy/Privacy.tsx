@@ -2,12 +2,30 @@ import RegisterButton from "../RegisterButton/RegisterButton";
 import "./Privacy.css";
 import watermark from "../../assets/lock-tp.png";
 import lock from "../../assets/lock.png";
+import { useEffect, useRef } from "react";
+import { useAnimation, useInView, motion } from "framer-motion";
 
 const Privacy = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start({ x: 0 });
+    }
+  }, [isInView]);
   return (
     <div className="privacy">
       <div>
-        <div className="privacy_text">
+        <motion.div
+          ref={ref}
+          initial={{ x: 250 }}
+          animate={mainControls}
+          transition={{ duration: 1 }}
+          className="privacy_text"
+        >
           <h2>
             Privacy Policy and <br />
             <span>Terms</span>
@@ -44,12 +62,18 @@ const Privacy = () => {
 
             <RegisterButton text="Read More" />
           </div>
-        </div>
+        </motion.div>
 
-        <div className="privacy_image_parent">
+        <motion.div
+          ref={ref}
+          initial={{ x: -250 }}
+          animate={mainControls}
+          transition={{ duration: 1 }}
+          className="privacy_image_parent"
+        >
           <img src={watermark} alt="" />
           <img src={lock} alt="" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ import chain from "../../assets/chain-9365116-7621444.png";
 import RegisterButton from "../RegisterButton/RegisterButton";
 import Star from "../Star/Star";
 import PinkBlur from "../PinkBlur/PinkBlur";
+import { motion } from "framer-motion";
 
 const Intro = () => {
   return (
@@ -20,7 +21,12 @@ const Intro = () => {
           <img src={vector} alt="" />
         </p>
         <div className="intro_main">
-          <div className="intro_info">
+          <motion.div
+            initial={{ y: -250 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 1 }}
+            className="intro_info"
+          >
             <div>
               <h1>
                 getlinked Tech <br /> Hackathon <span>1.0</span>
@@ -38,14 +44,19 @@ const Intro = () => {
             <p className="timer">
               00<small>H</small> 00<small>M</small> 00<small>S</small>
             </p>
-          </div>
+          </motion.div>
 
-          <div className="intro_image_holder">
+          <motion.div
+            initial={{ x: -250 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1 }}
+            className="intro_image_holder"
+          >
             <img src={globe} alt="" />
             <img src={dude} alt="" />
             <img src={purple} alt="" />
             <img src={metrix} alt="" />
-          </div>
+          </motion.div>
         </div>
       </div>
       <Star inset="20rem 4rem 0 12rem" />
