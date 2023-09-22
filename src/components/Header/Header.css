@@ -33,3 +33,9 @@ nav ul {
 .logo span {
   color: var(--pink);
 }
+
+.contact_link {
+  background: -webkit-linear-gradient(#903aff, #fe34b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

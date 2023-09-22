@@ -1,15 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import RegisterButton from "../RegisterButton/RegisterButton";
 import "./Header.css";
 
 const Header = () => {
+  const location = useLocation().pathname;
   return (
     <header>
       <nav>
         <section>
-          <p className="logo">
-            get<span>inked</span>
-          </p>
+          <Link to="/">
+            <p className="logo">
+              get<span>inked</span>
+            </p>
+          </Link>
         </section>
 
         <section className="link_holder">
@@ -17,7 +20,9 @@ const Header = () => {
             <li>Timeline</li>
             <li>Overview</li>
             <li>FAQS</li>
-            <li>Contact</li>
+            <li className={location == "/contact" ? "contact_link" : ""}>
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
           <Link to="/register">
             <RegisterButton />

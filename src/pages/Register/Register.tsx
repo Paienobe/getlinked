@@ -8,6 +8,17 @@ import { GoChevronDown } from "react-icons/go";
 
 const Register = () => {
   const [showModal, setShowModal] = useState(false);
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+
+  const updateState = (
+    value: string,
+    setter: React.Dispatch<React.SetStateAction<string>>
+  ) => {
+    setter(value);
+  };
   return (
     <div className="register">
       <div>
@@ -21,6 +32,7 @@ const Register = () => {
             className="register_form"
             onSubmit={(e) => {
               e.preventDefault();
+              
               setShowModal(true);
             }}
           >
@@ -28,20 +40,45 @@ const Register = () => {
             <div className="form_grid">
               <div>
                 <label htmlFor="">Team's Name</label>
-                <input type="text" placeholder="Enter the name of your group" />
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => {
+                    updateState(e.target.value, setName);
+                  }}
+                  placeholder="Enter the name of your group"
+                />
               </div>
               <div>
                 <label htmlFor="">Phone</label>
-                <input type="text" placeholder="Enter your phone number" />
+                <input
+                  type="text"
+                  value={phone}
+                  onChange={(e) => {
+                    updateState(e.target.value, setPhone);
+                  }}
+                  placeholder="Enter your phone number"
+                />
               </div>
               <div>
                 <label htmlFor="">Email</label>
-                <input type="email" placeholder="Enter your email address" />
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => {
+                    updateState(e.target.value, setEmail);
+                  }}
+                  placeholder="Enter your email address"
+                />
               </div>
               <div>
                 <label htmlFor="">Project Topic</label>
                 <input
                   type="text"
+                  value={message}
+                  onChange={(e) => {
+                    updateState(e.target.value, setMessage);
+                  }}
                   placeholder="What is your group project topic"
                 />
               </div>

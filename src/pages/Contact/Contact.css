@@ -1,0 +1,56 @@
+.contact_page {
+  padding: 5rem 0;
+}
+
+.contact_page > div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact_left p {
+  margin: 1rem 0;
+}
+
+.contact_right {
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 3rem;
+}
+
+.contact_right p {
+  font-size: 20px;
+  font-family: var(--clash-semibold);
+  color: var(--pink);
+}
+
+.contact_right form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  margin: 1rem 0;
+}
+
+.contact_right form input::placeholder,
+.contact_right form textarea::placeholder {
+  color: white;
+  font-family: var(--primary-font);
+}
+
+.contact_right form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  margin: 1rem 0;
+}
+
+.contact_right button {
+  margin: auto;
+}
