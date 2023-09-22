@@ -1,3 +1,4 @@
+import Star from "../Star/Star";
 import "./Timeline.css";
 import { timeline } from "./timelineData";
 
@@ -35,6 +36,14 @@ const Timeline = () => {
           })}
         </div>
       </div>
+
+      <Star inset="40rem 4rem 0 12rem" />
+      <Star isPink={true} inset="10rem 0 64rem 25rem" />
+      <Star inset="26rem 8rem 0 12rem" />
+      <Star inset="14rem 0 0 38rem" />
+      <Star inset="14rem 2rem 0 38rem" />
+      <Star inset="4rem 20rem 0 38rem" />
+      <Star inset="18rem 0 0 18rem" />
     </div>
   );
 };

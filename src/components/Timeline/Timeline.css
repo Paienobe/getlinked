@@ -1,6 +1,7 @@
 .timeline {
   padding: 5rem 0;
   border-bottom: 1px solid var(--white-fade);
+  position: relative;
 }
 
 .timeline > div {

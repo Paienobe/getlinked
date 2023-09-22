@@ -1,6 +1,7 @@
 import "./Judging.css";
 import judging from "../../assets/judging.png";
 import RegisterButton from "../RegisterButton/RegisterButton";
+import PinkBlur from "../PinkBlur/PinkBlur";
 
 const Judging = () => {
   const judgementCriteria = [
@@ -55,6 +56,9 @@ const Judging = () => {
           <RegisterButton text="Read More" />
         </div>
       </div>
+
+      <PinkBlur inset="20rem 0 0 -25rem " />
+      <PinkBlur inset="1rem 0 0 55rem" />
     </section>
   );
 };

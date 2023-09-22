@@ -1,6 +1,7 @@
 .judging {
   border-bottom: 1px solid var(--white-fade);
   padding: 4rem 0;
+  position: relative;
 }
 
 .judging > div {

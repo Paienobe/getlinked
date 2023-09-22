@@ -9,6 +9,7 @@ import explode from "../../assets/1f4a5.png";
 import chain from "../../assets/chain-9365116-7621444.png";
 import RegisterButton from "../RegisterButton/RegisterButton";
 import Star from "../Star/Star";
+import PinkBlur from "../PinkBlur/PinkBlur";
 
 const Intro = () => {
   return (
@@ -51,6 +52,7 @@ const Intro = () => {
       <Star isPink={true} inset="10rem 0 0 25rem" />
       <Star inset="26rem 0 0 12rem" />
       <Star inset="34rem 0 0 48rem" />
+      <PinkBlur inset="0 0 0 0" />
     </section>
   );
 };
