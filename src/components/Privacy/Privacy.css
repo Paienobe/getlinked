@@ -78,3 +78,29 @@
   position: absolute;
   top: 200px;
 }
+
+@media (max-width: 480px) {
+  .privacy {
+    padding-bottom: 10rem;
+  }
+
+  .privacy > div {
+    flex-direction: column;
+  }
+
+  .privacy_text {
+    width: 100%;
+  }
+
+  .privacy_image_parent {
+    width: 100%;
+  }
+
+  .privacy_image_parent {
+    margin-top: 2rem;
+  }
+
+  .privacy_image_parent img:last-of-type {
+    top: 100px;
+  }
+}

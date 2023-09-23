@@ -42,3 +42,32 @@
   font-size: 20px;
   color: var(--pink);
 }
+
+@media (max-width: 480px) {
+  .faq > div {
+    flex-direction: column;
+  }
+
+  .faq > div > img {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .questions_container {
+    width: 100%;
+  }
+
+  .questions_container > h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .questions_container > p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .question {
+    font-size: 12px;
+  }
+}
