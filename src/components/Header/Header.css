@@ -2,6 +2,10 @@ header {
   border-bottom: 1px solid var(--white-fade);
 }
 
+.closer {
+  display: none;
+}
+
 nav {
   width: 80%;
   margin: auto;
@@ -42,6 +46,44 @@ nav ul {
 
 @media (max-width: 480px) {
   .link_holder {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    flex-direction: column;
+    background-color: var(--purple-dark);
+    top: 0;
+    z-index: 1;
+    padding: 1rem;
+    align-items: normal;
+  }
+
+  .closer {
+    display: block;
+    width: 30px;
+    position: absolute;
+    right: 1rem;
+  }
+
+  .link_holder ul {
+    flex-direction: column;
+    align-items: normal;
+    margin-top: 2rem;
+  }
+
+  .link_holder .register_btn {
+    margin-top: 2rem;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hide {
     display: none;
   }
 }
