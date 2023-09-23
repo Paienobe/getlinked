@@ -36,3 +36,27 @@
   margin-top: 4rem;
   width: 100%;
 }
+
+@media (max-width: 480px) {
+  .prizes_main {
+    flex-direction: column;
+  }
+
+  .prizes > div > img,
+  .prizes > div > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .prizes > div > div > div {
+    width: 100%;
+  }
+
+  .prizes > div > div h2 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  .prizes > div > div {
+    font-size: 13px;
+  }
+}

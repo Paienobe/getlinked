@@ -50,7 +50,7 @@ const Rules = () => {
 
       <Star inset="34% 0 0 48%" />
       <PinkBlur inset="0 0 0 0" />
-      <PinkBlur inset="1% 0 0 55%" />
+      <PinkBlur inset="1% 0 0 25%" />
     </section>
   );
 };

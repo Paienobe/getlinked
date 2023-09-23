@@ -19,7 +19,7 @@ const Prizes = () => {
   return (
     <div className="prizes">
       <img className="prizes_overlay" src={overlay} alt="" />
-      <div>
+      <div className="prizes_main">
         <motion.img
           ref={ref}
           src={trophy}
