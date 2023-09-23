@@ -41,7 +41,12 @@ const Header = () => {
           </Link>
         </section>
 
-        <img src={menu} onClick={() => setShowMenu(true)} alt="" />
+        <img
+          className="menu_btn"
+          src={menu}
+          onClick={() => setShowMenu(true)}
+          alt=""
+        />
       </nav>
     </header>
   );

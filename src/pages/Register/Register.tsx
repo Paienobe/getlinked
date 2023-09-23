@@ -32,7 +32,7 @@ const Register = () => {
             className="register_form"
             onSubmit={(e) => {
               e.preventDefault();
-              
+
               setShowModal(true);
             }}
           >
@@ -82,18 +82,20 @@ const Register = () => {
                   placeholder="What is your group project topic"
                 />
               </div>
-              <div>
-                <label htmlFor="">Category</label>
-                <div className="form_select">
-                  <p>Select your category</p>
-                  <GoChevronDown size={18} />
+              <div className="form_dropdowns">
+                <div>
+                  <label htmlFor="">Category</label>
+                  <div className="form_select">
+                    <p>Select your category</p>
+                    <GoChevronDown size={18} />
+                  </div>
                 </div>
-              </div>
-              <div>
-                <label htmlFor="">Group Size</label>
-                <div className="form_select">
-                  <p>Select</p>
-                  <GoChevronDown size={18} />
+                <div>
+                  <label htmlFor="">Group Size</label>
+                  <div className="form_select">
+                    <p>Select</p>
+                    <GoChevronDown size={18} />
+                  </div>
                 </div>
               </div>
             </div>

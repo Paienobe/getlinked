@@ -48,7 +48,11 @@
 }
 
 .form_grid > div {
-  width: 48%;
+  width: 47%;
+}
+
+.form_grid > div:is(.form_dropdowns) {
+  width: 100%;
 }
 
 .form_grid > div > label {
@@ -99,4 +103,78 @@ form button {
   display: block;
   min-width: 100%;
   margin-top: 1rem;
+}
+
+.form_dropdowns {
+  display: flex;
+  justify-content: space-between;
+  /* font-size: 12px; */
+}
+
+.form_dropdowns > div {
+  width: 47%;
+}
+
+@media (max-width: 480px) {
+  .register > div {
+    flex-direction: column;
+    width: 90%;
+    position: relative;
+  }
+
+  .register > div > img {
+    width: 70%;
+    margin-top: 3rem;
+  }
+
+  .register > div > div {
+    width: 100%;
+    background-color: transparent;
+    margin-right: 0;
+    padding: 1rem;
+  }
+
+  .check_area p {
+    font-size: 10px;
+  }
+
+  .form_grid > div {
+    width: 100%;
+  }
+
+  .character_text {
+    font-size: 12px;
+  }
+
+  .form_header {
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+
+  .register_form i {
+    font-size: 9px;
+  }
+
+  .form_dropdowns {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  .form_select {
+    font-size: 12px;
+  }
+
+  .form_dropdowns > div:first-of-type {
+    width: 55%;
+  }
+  .form_dropdowns > div:last-of-type {
+    width: 40%;
+  }
+
+  .register h2 {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+  }
 }

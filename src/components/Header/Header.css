@@ -44,7 +44,15 @@ nav ul {
   -webkit-text-fill-color: transparent;
 }
 
+.menu_btn {
+  display: none;
+}
+
 @media (max-width: 480px) {
+  .menu_btn {
+    display: block;
+  }
+
   .link_holder {
     position: absolute;
     width: 100vw;
