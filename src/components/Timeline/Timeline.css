@@ -92,3 +92,42 @@
   line-height: 27.5px;
   margin-top: 1rem;
 }
+
+@media (max-width: 480px) {
+  .timeline_title,
+  .timeline_description,
+  .timeline_date {
+    font-size: 12px;
+  }
+
+  .timeline_date {
+    padding-left: 2.5rem;
+  }
+
+  .single_timeline {
+    position: relative;
+  }
+  .single_timeline > div:nth-of-type(2) {
+    order: -1;
+  }
+  .single_timeline:nth-of-type(even) > div:last-of-type {
+    text-align: left;
+  }
+  .single_timeline > div:not(:nth-of-type(2)) {
+    position: absolute;
+    width: 90%;
+    text-align: left;
+    font-size: 12px;
+  }
+  .single_timeline > div:not(:nth-of-type(2)):first-of-type {
+    top: 0;
+    right: 0;
+  }
+  .single_timeline > div:not(:nth-of-type(2)):last-of-type {
+    bottom: 0.5rem;
+  }
+
+  .single_timeline:nth-of-type(even) {
+    flex-direction: row;
+  }
+}
