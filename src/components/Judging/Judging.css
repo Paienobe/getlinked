@@ -43,3 +43,28 @@
 .judging img {
   width: 50%;
 }
+
+@media (max-width: 480px) {
+  .judging > div {
+    flex-direction: column;
+  }
+
+  .judging img {
+    width: 100%;
+  }
+
+  .judging_text {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .judging ul li {
+    font-size: 13px;
+  }
+
+  .judging h2 {
+    font-size: 20px;
+    margin: 1rem;
+  }
+}

@@ -31,3 +31,27 @@
   font-size: 14px;
   line-height: 27.5px;
 }
+
+@media (max-width: 640px) {
+  .rules {
+    padding: 3rem 0;
+  }
+
+  .rules > div {
+    flex-direction: column-reverse;
+  }
+
+  .rules > div > img,
+  .rules > div > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .rules_text h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .rules_text p {
+    font-size: 13px;
+  }
+}

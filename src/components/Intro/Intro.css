@@ -150,3 +150,47 @@
     border-color: transparent;
   }
 }
+
+@media (max-width: 480px) {
+  .intro_main {
+    flex-direction: column;
+  }
+
+  .intro_info {
+    position: static;
+  }
+
+  .intro_info h1 {
+    font-size: 32px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .intro_info h1 img:first-of-type,
+  .intro_info h1 img:nth-of-type(2),
+  .intro_info h1 img:last-of-type {
+    width: 32px;
+  }
+
+  .intro_image_holder {
+    width: 100%;
+  }
+
+  .intro_info p {
+    text-align: center;
+    font-size: 13px;
+    line-height: 166%;
+    margin-top: 1rem;
+  }
+
+  .intro_info .register_btn {
+    margin: 1rem auto;
+  }
+
+  .ignite {
+    font-size: 1rem;
+  }
+
+  .ignite img {
+    width: 50%;
+  }
+}

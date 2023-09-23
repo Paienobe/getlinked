@@ -39,3 +39,9 @@ nav ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@media (max-width: 480px) {
+  .link_holder {
+    display: none;
+  }
+}

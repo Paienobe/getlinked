@@ -10,7 +10,7 @@ const Header = () => {
         <section>
           <Link to="/">
             <p className="logo">
-              get<span>inked</span>
+              get<span>linked</span>
             </p>
           </Link>
         </section>

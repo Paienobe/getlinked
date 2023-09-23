@@ -26,3 +26,34 @@
   font-size: 14px;
   line-height: 27.5px;
 }
+
+@media (max-width: 480px) {
+  .big_idea > div {
+    flex-direction: column;
+  }
+
+  .big_idea > div > img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .idea_text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .big_idea > div h2 {
+    font-size: 20px;
+    line-height: 133%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .idea_text h2 br {
+    content: "";
+  }
+
+  .idea_text {
+    font-size: 13px;
+  }
+}
