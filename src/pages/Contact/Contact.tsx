@@ -4,8 +4,28 @@ import { RiTwitterXLine } from "react-icons/ri";
 import { FaFacebookF } from "react-icons/fa";
 import { BiLogoLinkedin } from "react-icons/bi";
 import RegisterButton from "../../components/RegisterButton/RegisterButton";
+import { useState } from "react";
+import { contact } from "../../services/api";
 
 const Contact = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+
+  const updateState = (
+    value: string,
+    setter: React.Dispatch<React.SetStateAction<string>>
+  ) => {
+    setter(value);
+  };
+
+  const contactPayload = {
+    email,
+    phone_number: "0903322445533",
+    first_name: name,
+    message,
+  };
+
   return (
     <div className="contact_page">
       <div>
@@ -46,11 +66,36 @@ const Contact = () => {
           <form
             onSubmit={(e) => {
               e.preventDefault();
+              contact(contactPayload);
             }}
           >
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Mail" />
-            <textarea placeholder="Message" name="" id="" rows={8}></textarea>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => {
+                updateState(e.target.value, setName);
+              }}
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => {
+                updateState(e.target.value, setEmail);
+              }}
+              placeholder="Mail"
+              required
+            />
+            <textarea
+              placeholder="Message"
+              required
+              value={message}
+              onChange={(e) => {
+                updateState(e.target.value, setMessage);
+              }}
+              rows={8}
+            ></textarea>
             <RegisterButton text="Submit" />
           </form>
         </div>

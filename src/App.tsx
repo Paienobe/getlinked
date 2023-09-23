@@ -8,6 +8,7 @@ import Register from "./pages/Register/Register";
 import Contact from "./pages/Contact/Contact";
 
 function App() {
+  // sorry for the mess 😅 this was really rushed 🫠
   return (
     <>
       <Router>

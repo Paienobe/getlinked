@@ -1,14 +1,42 @@
+import { RegisterPayload } from "../types";
+
 const baseUrl = "https://backend.getlinked.ai";
 
-const contactForm = async (
-  email: string,
-  phone_number: string,
-  first_name: string,
-  message: string
-) => {
+export const getCategories = async () => {
   const url = `${baseUrl}/hackathon/categories-list`;
-  const body = JSON.stringify({ email, phone_number, first_name, message });
-  const request = await fetch(url, { method: "POST", body });
+  const request = await fetch(url);
   const response = await request.json();
+  return response;
+};
+
+export const application = async (data: RegisterPayload) => {
+  const url = `${baseUrl}/hackathon/registration`;
+  const request = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+  const response = await request.json();
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
+  return response;
+};
+
+export const contact = async (data: any) => {
+  const url = `${baseUrl}/hackathon/contact-form`;
+  const request = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+  const response = await request.json();
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
   return response;
 };
