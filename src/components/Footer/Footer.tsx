@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="first_item">
           <div>
             <p className="logo">
-              get<span>inked</span>
+              get<span>linked</span>
             </p>
             <p>
               Getlinked Tech Hackathon is a technology innovation program

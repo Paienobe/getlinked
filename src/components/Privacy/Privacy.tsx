@@ -18,14 +18,13 @@ const Privacy = () => {
   }, [isInView]);
   return (
     <div className="privacy">
-      <div>
-        <motion.div
-          ref={ref}
-          initial={{ x: 250 }}
-          animate={mainControls}
-          transition={{ duration: 1 }}
-          className="privacy_text"
-        >
+      <motion.div
+        ref={ref}
+        initial={{ x: 250 }}
+        animate={mainControls}
+        transition={{ duration: 1 }}
+      >
+        <div className="privacy_text">
           <h2>
             Privacy Policy and <br />
             <span>Terms</span>
@@ -62,19 +61,13 @@ const Privacy = () => {
 
             <RegisterButton text="Read More" />
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          ref={ref}
-          initial={{ x: -250 }}
-          animate={mainControls}
-          transition={{ duration: 1 }}
-          className="privacy_image_parent"
-        >
+        <div className="privacy_image_parent">
           <img src={watermark} alt="" />
           <img src={lock} alt="" />
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </div>
   );
 };

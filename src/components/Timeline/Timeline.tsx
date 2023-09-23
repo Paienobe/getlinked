@@ -55,13 +55,19 @@ const Timeline = () => {
         </motion.div>
       </div>
 
-      <Star inset="40rem 4rem 0 12rem" />
-      <Star isPink={true} inset="10rem 0 64rem 25rem" />
-      <Star inset="26rem 8rem 0 12rem" />
-      <Star inset="14rem 0 0 38rem" />
-      <Star inset="14rem 2rem 0 38rem" />
-      <Star inset="4rem 20rem 0 38rem" />
-      <Star inset="18rem 0 0 18rem" />
+      <Star inset="40% 4% 0 12%" />
+
+      <Star isPink={true} inset="10% 0 64% 25%" />
+
+      <Star inset="26% 8% 0 12%" />
+
+      <Star inset="14% 0 0 38%" />
+
+      <Star inset="14% 2% 0 38%" />
+
+      <Star inset="4% 20% 0 38%" />
+
+      <Star inset="18% 0 0 18%" />
     </div>
   );
 };

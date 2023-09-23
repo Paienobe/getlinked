@@ -75,8 +75,8 @@ const Judging = () => {
         </div>
       </motion.div>
 
-      <PinkBlur inset="20rem 0 0 -25rem " />
-      <PinkBlur inset="1rem 0 0 55rem" />
+      <PinkBlur inset="20% 0 0 -25%" />
+      <PinkBlur inset="1% 0 0 55%" />
     </section>
   );
 };

@@ -42,12 +42,15 @@ const Rules = () => {
         <img src={rulesImage} alt="" />
       </motion.div>
 
-      <Star inset="20rem 4rem 0 12rem" />
-      <Star isPink={true} inset="10rem 0 0 25rem" />
-      <Star inset="26rem 0 0 12rem" />
-      <Star inset="34rem 0 0 48rem" />
+      <Star inset="20% 4% 0 12%" />
+
+      <Star isPink={true} inset="10% 0 0 25%" />
+
+      <Star inset="26% 0 0 12%" />
+
+      <Star inset="34% 0 0 48%" />
       <PinkBlur inset="0 0 0 0" />
-      <PinkBlur inset="1rem 0 0 55rem" />
+      <PinkBlur inset="1% 0 0 55%" />
     </section>
   );
 };

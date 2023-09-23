@@ -59,3 +59,26 @@ footer > div {
   text-align: center;
   margin-top: 3rem;
 }
+
+@media (max-width: 480px) {
+  footer p {
+    font-size: 12px;
+  }
+
+  footer .logo {
+    font-size: 20px;
+  }
+
+  .footer_top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .first_item > p {
+    margin-top: 1rem;
+  }
+
+  .footer_top > div:first-of-type {
+    width: 100%;
+  }
+}
