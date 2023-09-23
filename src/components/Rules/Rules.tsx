@@ -48,9 +48,9 @@ const Rules = () => {
 
       <Star inset="26% 0 0 12%" />
 
-      <Star inset="34% 0 0 48%" />
+      <Star inset="34% 48% 0 0 " />
       <PinkBlur inset="0 0 0 0" />
-      <PinkBlur inset="1% 0 0 25%" />
+      <PinkBlur inset="2% 0 0 55%" />
     </section>
   );
 };
